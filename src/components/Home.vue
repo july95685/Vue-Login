@@ -73,7 +73,7 @@ export default {
             let opt = {
                 id:this.user[id]._id
             }
-            api.delUser(opt).then(response => {
+            api.delUser(opt).then( (response) => {
                 console.log(response)
                 this.$message({
                     type:"success",
