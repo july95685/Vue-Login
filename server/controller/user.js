@@ -33,8 +33,6 @@ const Login = (req,res) => {
 	})
 
 	model.User.findOne({ email : userLogin.email}, (err,doc) => {
-		console.log(doc);
-		console.log(userLogin.password)
 		if(err) console.log(err)
 		if(!doc){
 			console.log("帐号不存在");
